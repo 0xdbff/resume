@@ -1,0 +1,144 @@
+\documentclass[a4paper,8pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[left=1cm, right=1cm, top=1cm, bottom=1cm]{geometry}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox} 
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[x11names]{xcolor}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{fontawesome}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lastpage}
+\usepackage{helvet}
+
+\usepackage{progressbar}
+\definecolor{pbblue}{HTML}{61AEEF}
+
+
+\definecolor{blue}{HTML}{61AEEF}
+
+\newcommand\TextBox[1]{%
+  \begin{mdframed}[roundcorner=5pt, linecolor=gray!14, backgroundcolor=gray!14, skipabove=0pt, skipbelow=0pt, innermargin=0cm, outermargin=-0cm,rightmargin=0cm,leftmargin=0cm, nobreak=true]
+    \noindent 
+    \small #1
+  \end{mdframed}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyfoot[R]{\raisebox{12pt}{\footnotesize\textcolor{blue}{\textit{Page \thepage{} of \pageref{LastPage} | Copyright \textsuperscript{\textcopyright} 2023 Diogo Antunes}}}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\footrule}{\hbox to\headwidth{\textcolor{blue}{\leaders\hrule height \footrulewidth\hfill}}\vskip-0.4pt}
+
+\begin{document}
+
+% \progressbaroptions{
+  % width=\textwidth,
+  % height=0.1cm,
+  % color=pbblue,
+  % emptycolor=gray!5,
+  % borderwidth=0.2mm
+% }
+
+\noindent 
+\begin{minipage}[t]{0.22\textwidth} 
+    \includegraphics[width=\textwidth,valign=t]{images/db.png} 
+\end{minipage}\hfill 
+\begin{minipage}[t]{0.35\textwidth} 
+    \section*{Diogo Antunes}
+    \vspace{-3.0mm}
+    {\color{blue}\subsubsection*{Software Engineer}}
+    \vspace{-1.2mm}
+    Your description goes here. This can include your career objectives, a brief about your background, or whatever you feel is relevant and can make a strong impression. Your description goes here. Some more text, testing overflow. Some more text, testing overflow.
+\end{minipage}\hfill 
+\begin{minipage}[t]{0.35\textwidth} 
+    \TextBox{FullStack Software Engineer}
+    \TextBox{Project Manager \& System Administrator}
+    \TextBox{Data Scientist, AI Engineer \& Researcher}
+    \TextBox{Cybersecurity Analyst}
+\end{minipage}
+
+\hypersetup{urlcolor=black} % sets the hyperlink color
+
+\renewcommand{\arraystretch}{1.5}
+\par\medskip
+\noindent\hspace*{-1cm}\colorbox{gray!14}{%
+    \parbox{\paperwidth}{%
+        \hfill % centers the content
+        \begin{minipage}[t]{0.2475\textwidth}
+            \begin{tabular}{@{}ll@{}}
+                \phantom\faEnvelopeSquare\llap{\color{blue}\faMapMarker} & \small Braga, Portugal \\
+                \phantom\faEnvelopeSquare\llap{\color{blue}\faEnvelopeSquare} & \small Diogo@0xdbff.dev \\
+                \phantom\faEnvelopeSquare\llap{\color{blue}\faPhone} & \small +351 939911077
+            \end{tabular}
+        \end{minipage}\hfill
+        \begin{minipage}[t]{0.2475\textwidth}
+            \begin{tabular}{@{}ll@{}}
+                \phantom\faEnvelopeSquare\llap{\color{blue}\faGlobe} & \small\href{https://www.0xdbff.dev/}{0xdbff.dev} \\
+                \phantom\faEnvelopeSquare\llap{\color{blue}\faGitlab} & \small\href{https://www.0xdbff.dev/git/}{0xdbff.dev/git} \\
+                \phantom\faEnvelopeSquare\llap{\color{blue}\faGithub} & \small\href{https://github.com/Db-Dev2002/}{github.com/Db-Dev2002}
+            \end{tabular}
+        \end{minipage}\hfill
+        \begin{minipage}[t]{0.405\textwidth}
+            \begin{tabular}{@{}ll@{}}
+                \phantom\faEnvelopeSquare\llap{\color{blue}\faLinkedin} & \small\href{https://linkedin.com/}{linkedin.com/in/diogo-antunes-825651244}\\
+                \phantom\faEnvelopeSquare\llap{\color{blue}\faTwitter} & \small\href{https://twitter.com/}{twitter.com/db\_dev2002} \\
+                \phantom\faEnvelopeSquare\llap{\color{blue}\faYoutubePlay} & \small\href{https://www.youtube.com/channel/UCG_3ItTbECtfT0HSGN3Brng}{0xdbff}
+            \end{tabular}
+        \end{minipage}
+        \hfill % centers the content
+    }%
+}\hspace*{-1cm}\par\medskip
+\renewcommand{\arraystretch}{1}
+
+\begin{minipage}[t]{0.34\textwidth}
+A lot of text here to test overflow. A lot of text here to test overflow.A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow.A lot of text here to test overflow. A lot of text here to test overflow.
+
+\textcolor{blue}{\textbf{Python}} \progressbar{0.90} \\
+\textcolor{blue}{\textbf{Java}} \progressbar{0.75} \\
+\textcolor{blue}{\textbf{C++}} \progressbar{0.85} \\
+
+\vspace{10.431cm}
+{\color{blue}\subsection*{Digital badges}}
+\vspace{-3.0mm}
+\end{minipage} \hfill % centers the content
+\begin{minipage}[t]{0.61\textwidth}
+{\color{blue}\section*{Experience}}
+\vspace{-1.0mm}
+\subsection*{Job 1}
+\vspace{-1.2mm}
+A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow.
+A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow.
+\subsection*{Job 2}
+\vspace{-1.2mm}
+A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow.
+A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow.
+\end{minipage} \hfill % centers the content
+
+\vspace{-1.0mm}
+\par\medskip
+\noindent\hspace*{-1cm}\colorbox{gray!8}{%
+    \parbox{\paperwidth}{
+        \begin{center}
+            \includegraphics[width=0.071\textwidth,valign=t]{images/tensorflow.png}\hspace{0.01\textwidth}
+            \includegraphics[width=0.071\textwidth,valign=t]{images/linux_sysadmin.png}\hspace{0.01\textwidth}
+            \includegraphics[width=0.071\textwidth,valign=t]{images/android.png}\hspace{0.01\textwidth}
+            \includegraphics[width=0.073\textwidth,valign=t]{images/cybersecurity.png}\hspace{0.01\textwidth}
+            \includegraphics[width=0.082\textwidth,valign=t]{images/1.png}\hspace{0.01\textwidth}
+            \includegraphics[width=0.071\textwidth,valign=t]{images/meta_backend.png}\hspace{0.01\textwidth}
+            \includegraphics[width=0.071\textwidth,valign=t]{images/meta_frontend.png}\hspace{0.01\textwidth}
+            \includegraphics[width=0.071\textwidth,valign=t]{images/aws.png}\hspace{0.01\textwidth}
+        \end{center}
+    }%
+}\hspace*{-1cm}\par\medskip
+
+\vspace{12cm}
+Something here
+\vspace{12cm}
+
+\end{document}
