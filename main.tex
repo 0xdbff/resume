@@ -1,4 +1,4 @@
-\documentclass[a4paper,8pt]{article}
+\documentclass[a4paper,9pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[left=1cm, right=1cm, top=1cm, bottom=1cm]{geometry}
 \usepackage{graphicx}
@@ -14,8 +14,11 @@
 \usepackage{lastpage}
 \usepackage{helvet}
 
-\usepackage{progressbar}
 \definecolor{pbblue}{HTML}{61AEEF}
+
+\newcommand{\coloritem}[2]{
+    \item[{\color{#1}$\bullet$}] #2
+}
 
 
 \definecolor{blue}{HTML}{61AEEF}
@@ -37,13 +40,6 @@
 
 \begin{document}
 
-% \progressbaroptions{
-  % width=\textwidth,
-  % height=0.1cm,
-  % color=pbblue,
-  % emptycolor=gray!5,
-  % borderwidth=0.2mm
-% }
 
 \noindent 
 \begin{minipage}[t]{0.22\textwidth} 
@@ -67,13 +63,13 @@
 
 \renewcommand{\arraystretch}{1.5}
 \par\medskip
-\noindent\hspace*{-1cm}\colorbox{gray!14}{%
+\noindent\hspace*{-1cm}\colorbox{gray!8}{%
     \parbox{\paperwidth}{%
         \hfill % centers the content
         \begin{minipage}[t]{0.2475\textwidth}
             \begin{tabular}{@{}ll@{}}
                 \phantom\faEnvelopeSquare\llap{\color{blue}\faMapMarker} & \small Braga, Portugal \\
-                \phantom\faEnvelopeSquare\llap{\color{blue}\faEnvelopeSquare} & \small Diogo@0xdbff.dev \\
+                \phantom\faEnvelopeSquare\llap{\color{blue}\faEnvelopeSquare} & \small diogo@0xdbff.dev \\
                 \phantom\faEnvelopeSquare\llap{\color{blue}\faPhone} & \small +351 939911077
             \end{tabular}
         \end{minipage}\hfill
@@ -97,21 +93,103 @@
 \renewcommand{\arraystretch}{1}
 
 \begin{minipage}[t]{0.34\textwidth}
-A lot of text here to test overflow. A lot of text here to test overflow.A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow.A lot of text here to test overflow. A lot of text here to test overflow.
 
-\textcolor{blue}{\textbf{Python}} \progressbar{0.90} \\
-\textcolor{blue}{\textbf{Java}} \progressbar{0.75} \\
-\textcolor{blue}{\textbf{C++}} \progressbar{0.85} \\
+\subsection*{Languages}
+\vspace{-1.2mm}
 
-\vspace{10.431cm}
+\begin{itemize}
+    \item English \small (Fluent Speaker)
+    \item Portuguese \small (Native)
+\end{itemize}
+
+\vspace{-1.8mm}
+\subsection*{Technical Skills}
+\vspace{-1.2mm}
+
+\newlist{coloritemize}{itemize}{1}
+\setlist[coloritemize]{label=\textcolor{blue}{\textbullet}}
+
+\subsubsection*{Programming Languages}
+\vspace{-1.2mm}
+\begin{itemize}
+    \coloritem{blue}{Proficient in C, C++ (clang), Cuda C++ (nvcc)}
+    \coloritem{blue}{Advanced knowledge of Python, Rust}
+    \coloritem{blue}{Basic understanding of Go, Java}
+\end{itemize}
+
+\vspace{-2.2mm}
+\subsubsection*{Database \& Data Management}
+\vspace{-1.2mm}
+\begin{itemize}
+    \coloritem{blue}{Experience with SQL (Postgres), Redis}
+    \coloritem{blue}{Data science tools: Pandas, Numpy, Matplotlib, Jupyter Lab}
+\end{itemize}
+
+\vspace{-2.2mm}
+\subsubsection*{Software Development \& Web Technologies}
+\vspace{-1.2mm}
+\begin{itemize}
+    \coloritem{blue}{Experience with Docker, Linux system administration}
+    \coloritem{blue}{Web Development: Typescript, JS, CSS, HTML SCSS, JSON}
+    \coloritem{blue}{Web framework: React}
+    \coloritem{blue}{Restful APIs, WebSocket, Load balancing for API requests}
+    \coloritem{blue}{UDP streaming}
+\end{itemize}
+
+\vspace{-2.2mm}
+\subsubsection*{Machine Learning \& AI}
+\vspace{-1.2mm}
+\begin{itemize}
+    \coloritem{blue}{AI, ML, DL, RL research experience}
+    \coloritem{blue}{Computer vision with OpenCV in Python and C++}
+    \coloritem{blue}{TensorFlow with Python, basic knowledge with C++}
+\end{itemize}
+
+% \vspace{-2.2mm}
+% \subsubsection*{Network \& Security Management}
+% \vspace{-1.2mm}
+% \begin{itemize}
+%     \coloritem{blue}{Secure authentication systems (JWT), 2/3 factor auth}
+%     \coloritem{blue}{Experience in network systems management}
+%     \coloritem{blue}{Techniques: Port management, network analysis nmap, firewall setup, honeypots, DNS servers, reverse proxies, TLS certificates, router management, network port forwarding, DMZ zone, NAT, network packet analysis}
+% \end{itemize}
+
+\vspace{-2.2mm}
+\subsubsection*{Project \& Workflow Management}
+\vspace{-1.2mm}
+\begin{itemize}
+    \coloritem{blue}{Scrum workflow methodology}
+    \coloritem{blue}{PACE workflow methodology (data science)}
+\end{itemize}
+
+\vspace{-1.2mm}
+% \subsubsection*{Other Skills}
+% \vspace{-1.2mm}
+% \begin{itemize}
+%     \coloritem{blue}{Professional writing with Latex}
+%     \coloritem{blue}{Working statistical knowledge, and data prediction}
+%     \coloritem{blue}{Working math knowledge (discrete math, linear algebra, calculus, complex analysis, geometry)}
+%     \coloritem{blue}{Physics knowledge}
+% \end{itemize}
+%
+% \begin{itemize}
+%         \coloritem{blue}{Systems level programming, \small \textbf {C\texttt{|} Rust}}
+%         \coloritem{blue}{Parallel computing with \textbf {Cuda}{\tiny(C++ nvcc)\texttt{|}Python3}}
+%   % \coloritem{blue}{\small Data science with python3}
+%   % \coloritem{blue}{\small Linux\tiny{(kernel)} system administrator}
+%   % \coloritem{blue}{\small Restfull APIs}
+%   % \coloritem{blue}{\small Secure Authentication Systems \tiny {(jwt) \& 2/3 factor auth}
+% \end{itemize}
+
 {\color{blue}\subsection*{Digital badges}}
 \vspace{-3.0mm}
 \end{minipage} \hfill % centers the content
 \begin{minipage}[t]{0.61\textwidth}
 {\color{blue}\section*{Experience}}
 \vspace{-1.0mm}
-\subsection*{Job 1}
+\subsection*{Internship}
 \vspace{-1.2mm}
+\subsubsection*{Digital solutions company}
 A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow.
 A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow.
 \subsection*{Job 2}
@@ -126,7 +204,7 @@ A lot of text here to test overflow. A lot of text here to test overflow. A lot 
     \parbox{\paperwidth}{
         \begin{center}
             \includegraphics[width=0.071\textwidth,valign=t]{images/tensorflow.png}\hspace{0.01\textwidth}
-            \includegraphics[width=0.071\textwidth,valign=t]{images/linux_sysadmin.png}\hspace{0.01\textwidth}
+            % \includegraphics[width=0.071\textwidth,valign=t]{images/linux_sysadmin.png}\hspace{0.01\textwidth}
             \includegraphics[width=0.071\textwidth,valign=t]{images/android.png}\hspace{0.01\textwidth}
             \includegraphics[width=0.073\textwidth,valign=t]{images/cybersecurity.png}\hspace{0.01\textwidth}
             \includegraphics[width=0.082\textwidth,valign=t]{images/1.png}\hspace{0.01\textwidth}
