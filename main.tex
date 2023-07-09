@@ -13,6 +13,8 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{lastpage}
 \usepackage{helvet}
+\usepackage[skins,breakable]{tcolorbox}
+\usepackage{lipsum}
 
 \definecolor{pbblue}{HTML}{61AEEF}
 
@@ -70,7 +72,7 @@
             \begin{tabular}{@{}ll@{}}
                 \phantom\faEnvelopeSquare\llap{\color{blue}\faMapMarker} & \small Braga, Portugal \\
                 \phantom\faEnvelopeSquare\llap{\color{blue}\faEnvelopeSquare} & \small diogo@0xdbff.dev \\
-                \phantom\faEnvelopeSquare\llap{\color{blue}\faPhone} & \small +351 939911077
+                \phantom\faEnvelopeSquare\llap{\color{blue}\faPhone} & \small +351 93991107
             \end{tabular}
         \end{minipage}\hfill
         \begin{minipage}[t]{0.2475\textwidth}
@@ -92,18 +94,42 @@
 }\hspace*{-1cm}\par\medskip
 \renewcommand{\arraystretch}{1}
 
-\begin{minipage}[t]{0.34\textwidth}
+% \begin{tcolorbox}[
+%   blanker,
+%   width=0.64\textwidth,enlarge left by=0.36\textwidth,
+%   before skip=6pt,
+%   breakable,
+%   overlay unbroken and first={%
+%     \node[inner sep=0pt,outer sep=0pt,text width=0.33\textwidth,
+%       align=none,
+%       below right]
+%       at ([xshift=-0.64\textwidth]frame.north west)
+%   {%
 
-\subsection*{Languages}
-\vspace{-1.2mm}
+      \begin{tcolorbox}[
+  blanker,
+  width=0.64\textwidth,enlarge right by=0.36\textwidth,
+  before skip=6pt,
+  breakable,
+  overlay unbroken and first={%
+    \node[inner sep=0pt,outer sep=0pt,text width=0.33\textwidth,
+      align=none,
+      below left]
+      at ([xshift=0.36\textwidth]frame.north east)
+  {%
+
+
+\vspace{-8.3mm}
+\section*{Languages}
+\vspace{-1.0mm}
 
 \begin{itemize}
     \item English \small (Fluent Speaker)
     \item Portuguese \small (Native)
 \end{itemize}
 
-\vspace{-1.8mm}
-\subsection*{Technical Skills}
+\vspace{-4.8mm}
+\section*{Technical Skills}
 \vspace{-1.2mm}
 
 \newlist{coloritemize}{itemize}{1}
@@ -117,7 +143,7 @@
     \coloritem{blue}{Basic understanding of Go, Java}
 \end{itemize}
 
-\vspace{-2.2mm}
+\vspace{-3.2mm}
 \subsubsection*{Database \& Data Management}
 \vspace{-1.2mm}
 \begin{itemize}
@@ -125,7 +151,7 @@
     \coloritem{blue}{Data science tools: Pandas, Numpy, Matplotlib, Jupyter Lab}
 \end{itemize}
 
-\vspace{-2.2mm}
+\vspace{-3.2mm}
 \subsubsection*{Software Development \& Web Technologies}
 \vspace{-1.2mm}
 \begin{itemize}
@@ -136,7 +162,7 @@
     \coloritem{blue}{UDP streaming}
 \end{itemize}
 
-\vspace{-2.2mm}
+\vspace{-3.2mm}
 \subsubsection*{Machine Learning \& AI}
 \vspace{-1.2mm}
 \begin{itemize}
@@ -154,7 +180,7 @@
 %     \coloritem{blue}{Techniques: Port management, network analysis nmap, firewall setup, honeypots, DNS servers, reverse proxies, TLS certificates, router management, network port forwarding, DMZ zone, NAT, network packet analysis}
 % \end{itemize}
 
-\vspace{-2.2mm}
+\vspace{-3.2mm}
 \subsubsection*{Project \& Workflow Management}
 \vspace{-1.2mm}
 \begin{itemize}
@@ -181,22 +207,33 @@
 %   % \coloritem{blue}{\small Secure Authentication Systems \tiny {(jwt) \& 2/3 factor auth}
 % \end{itemize}
 
-{\color{blue}\subsection*{Digital badges}}
-\vspace{-3.0mm}
-\end{minipage} \hfill % centers the content
-\begin{minipage}[t]{0.61\textwidth}
-{\color{blue}\section*{Experience}}
-\vspace{-1.0mm}
+  };}]
+
+
+\section*{Professional Experience}
+\vspace{-2.0mm}
+{\color{blue}\subsection*{Employment Timeline}}
+
 \subsection*{Internship}
 \vspace{-1.2mm}
 \subsubsection*{Digital solutions company}
-A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow.
-A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow.
+\lipsum[1]
+\vspace{-3.2mm}
 \subsection*{Job 2}
 \vspace{-1.2mm}
-A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow.
-A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow. A lot of text here to test overflow.
-\end{minipage} \hfill % centers the content
+\lipsum[1]
+
+\vspace{-3.2mm}
+\subsection*{Job 2}
+\vspace{-1.2mm}
+\lipsum[1]
+\vspace{-2.2mm}
+
+{\color{blue}\subsection*{Digital badges}}
+\vspace{-3.2mm}
+
+\end{tcolorbox}
+
 
 \vspace{-1.0mm}
 \par\medskip
@@ -215,8 +252,126 @@ A lot of text here to test overflow. A lot of text here to test overflow. A lot 
     }%
 }\hspace*{-1cm}\par\medskip
 
-\vspace{12cm}
-Something here
-\vspace{12cm}
+
+\begin{tcolorbox}[
+  blanker,
+  width=0.64\textwidth,enlarge left by=0.36\textwidth,
+  before skip=6pt,
+  breakable,
+  overlay unbroken and first={%
+    \node[inner sep=0pt,outer sep=0pt,text width=0.33\textwidth,
+      align=none,
+      below right]
+      at ([xshift=-0.36\textwidth]frame.north west)
+  {%
+\vspace{-4.8mm}
+\section*{Technical Skills}
+\vspace{-1.2mm}
+
+\newlist{coloritemize}{itemize}{1}
+\setlist[coloritemize]{label=\textcolor{blue}{\textbullet}}
+
+\subsubsection*{Programming Languages}
+\vspace{-1.2mm}
+\begin{itemize}
+    \coloritem{blue}{Proficient in C, C++ (clang), Cuda C++ (nvcc)}
+    \coloritem{blue}{Advanced knowledge of Python, Rust}
+    \coloritem{blue}{Basic understanding of Go, Java}
+\end{itemize}
+
+\vspace{-3.2mm}
+\subsubsection*{Database \& Data Management}
+\vspace{-1.2mm}
+\begin{itemize}
+    \coloritem{blue}{Experience with SQL (Postgres), Redis}
+    \coloritem{blue}{Data science tools: Pandas, Numpy, Matplotlib, Jupyter Lab}
+\end{itemize}
+
+\vspace{-3.2mm}
+\subsubsection*{Software Development \& Web Technologies}
+\vspace{-1.2mm}
+\begin{itemize}
+    \coloritem{blue}{Experience with Docker, Linux system administration}
+    \coloritem{blue}{Web Development: Typescript, JS, CSS, HTML SCSS, JSON}
+    \coloritem{blue}{Web framework: React}
+    \coloritem{blue}{Restful APIs, WebSocket, Load balancing for API requests}
+    \coloritem{blue}{UDP streaming}
+\end{itemize}
+
+\vspace{-3.2mm}
+\subsubsection*{Machine Learning \& AI}
+\vspace{-1.2mm}
+\begin{itemize}
+    \coloritem{blue}{AI, ML, DL, RL research experience}
+    \coloritem{blue}{Computer vision with OpenCV in Python and C++}
+    \coloritem{blue}{TensorFlow with Python, basic knowledge with C++}
+\end{itemize}
+
+% \vspace{-2.2mm}
+% \subsubsection*{Network \& Security Management}
+% \vspace{-1.2mm}
+% \begin{itemize}
+%     \coloritem{blue}{Secure authentication systems (JWT), 2/3 factor auth}
+%     \coloritem{blue}{Experience in network systems management}
+%     \coloritem{blue}{Techniques: Port management, network analysis nmap, firewall setup, honeypots, DNS servers, reverse proxies, TLS certificates, router management, network port forwarding, DMZ zone, NAT, network packet analysis}
+% \end{itemize}
+
+\vspace{-3.2mm}
+\subsubsection*{Project \& Workflow Management}
+\vspace{-1.2mm}
+\begin{itemize}
+    \coloritem{blue}{Scrum workflow methodology}
+    \coloritem{blue}{PACE workflow methodology (data science)}
+\end{itemize}
+
+\vspace{-3.2mm}
+\section*{Education}
+
+{\color{blue} \textbf {Degree}}  in informatic systems engineering at IPCA (2021-2024)
+
+
+{\color{blue} \textbf {Masters}} in Applied Artifitial Inteligence at IPCA (2024-2026)
+
+{\color{blue}\subsection*{Professional Certifications}}
+
+\begin{itemize}
+    \item Google Advanced Data Analytics
+    \item Google Professional Cybersecurity
+    \item Meta Backend developer
+    \item Meta Frontend developer
+    \item Nvidia Parallel computing with c++
+    \item Nvidia Disaster Risk monitoring with satellatery image
+    \item Nvidia Data science with python
+    \item Nvidia Deep learning with python
+    \item Tensorflow developer Certificate
+    \item Android Associate Certificate
+    \item AWS Solutions Architect
+\end{itemize}
+
+
+  };}]
+\section*{Professional Experience}
+\vspace{-2.0mm}
+{\color{blue}\subsection*{Employment Timeline}}
+
+\subsection*{Internship}
+\vspace{-1.2mm}
+\subsubsection*{Digital solutions company}
+\lipsum[1]
+\vspace{-3.2mm}
+{\color{blue}\subsection*{Publications}}
+\lipsum[1]
+
+\vspace{-3.2mm}
+{\color{blue}\subsection*{Projects}}
+
+\lipsum[1]
+
+\vspace{-3.2mm}
+\section*{About me}
+\lipsum[1]
+
+
+\end{tcolorbox}
 
 \end{document}
